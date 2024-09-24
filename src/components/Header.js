@@ -86,14 +86,14 @@ const Header = () => {
 						</Link>
 					</li>
 					<li>
-						<a href="#support" onClick={() => setMenuOpen(false)}>
+						<Link to="/support" onClick={() => setMenuOpen(false)}>
 							Support
-						</a>
+						</Link>
 					</li>
 					<li>
-						<a href="#shop" onClick={() => setMenuOpen(false)}>
+						<Link to="/shop" onClick={() => setMenuOpen(false)}>
 							Shop
-						</a>
+						</Link>
 					</li>
 					<li
 						className="submenu-container"

@@ -1,0 +1,227 @@
+/* Global Styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  /* Prevent horizontal scrolling */
+}
+
+/* Full-width image section */
+.full-width-image-console {
+  background-image: url('../../images/shop/console.webp');
+  /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  /* Set height to 50% */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  position: relative;
+
+  /* Fallback color */
+}
+
+.image-content-console h1 {
+  color: #121a4a;
+  /* Dark background for text */
+  padding: 1rem;
+  font-weight: 900;
+  border-radius: 5px;
+}
+
+
+.image-content-console p {
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+
+/* Grid Section */
+.grid-section-console {
+  padding: 2rem 0;
+}
+
+.grid-container-console {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  /* 3 columns */
+  grid-template-rows: repeat(4, 1fr);
+  /* 4 rows */
+  gap: 2rem;
+  /* Space between grid items */
+  max-width: 1200px;
+  /* Limit maximum width */
+  margin: 0 auto;
+  /* Center the grid */
+}
+
+/* Grid Item */
+.grid-item-console {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 30vh;
+  /* Set height of each grid item */
+  transition: transform 0.3s ease;
+  /* Smooth scaling on hover */
+}
+
+/* Set background images for each grid item */
+#image1 {
+  background-image: url('../../images/shop/img1.webp');
+}
+
+#image2 {
+  background-image: url('../../images/shop/img2.webp');
+}
+
+#image3 {
+  background-image: url('../../images/shop/img3.webp');
+}
+
+#image4 {
+  background-image: url('../../images/shop/img4.webp');
+}
+
+#image5 {
+  background-image: url('../../images/shop/img5.webp');
+}
+
+#image6 {
+  background-image: url('../../images/shop/img6.webp');
+}
+
+#image7 {
+  background-image: url('../../images/shop/img7.webp');
+}
+
+#image8 {
+  background-image: url('../../images/shop/img8.webp');
+}
+
+#image9 {
+  background-image: url('../../images/shop/img9.webp');
+}
+
+#image10 {
+  background-image: url('../../images/shop/img10.webp');
+}
+
+#image11 {
+  background-image: url('../../images/shop/img11.webp');
+}
+
+#image12 {
+  background-image: url('../../images/shop/img12.webp');
+}
+
+/* Hover Images */
+#image1:hover {
+  background-image: url('../../images/shop/img1hover.webp');
+}
+
+#image2:hover {
+  background-image: url('../../images/shop/img2hover.webp');
+}
+
+#image3:hover {
+  background-image: url('../../images/shop/img3hover.webp');
+}
+
+#image4:hover {
+  background-image: url('../../images/shop/img4hover.webp');
+}
+
+#image5:hover {
+  background-image: url('../../images/shop/img5hover.webp');
+}
+
+#image6:hover {
+  background-image: url('../../images/shop/img6hover.webp');
+}
+
+#image7:hover {
+  background-image: url('../../images/shop/img7hover.webp');
+}
+
+#image8:hover {
+  background-image: url('../../images/shop/img8hover.webp');
+}
+
+/* Image Hover Effect */
+.grid-item-console:hover {
+  transform: scale(1.05);
+  /* Scale effect on hover */
+}
+
+/* Overlay */
+.overlay-console {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  /* Dark overlay */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 1rem;
+  color: white;
+}
+
+/* Additional styles for title and description in overlay */
+.overlay-console h1 {
+  font-size: 1.2rem;
+  /* Title size */
+  margin: auto auto;
+  font-size: 2rem;
+  /* Margin between title and description */
+}
+
+.overlay-console p {
+  font-size: 0.9rem;
+  /* Description size */
+  margin: 0;
+  /* Remove default margin */
+}
+
+/* Pre-order badge */
+.pre-order-console {
+  position: absolute;
+  top: 0.5rem;
+  right: 0;
+  background-color: #ff8d6b;
+  color: black;
+  text-transform: uppercase;
+  padding: 0.2rem 0.5rem;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .grid-container-console {
+    grid-template-columns: repeat(2, 1fr);
+    /* 2 columns on medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container-console {
+    grid-template-columns: 1fr;
+    /* 1 column on small screens */
+    gap: 1rem;
+    /* Reduce gap for smaller screens */
+    padding: 0 1rem;
+    /* Reduce padding for smaller screens */
+  }
+
+  .grid-item-console {
+    height: 30vh;
+    /* Adjust height for smaller screens */
+  }
+}
